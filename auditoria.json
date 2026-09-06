@@ -1,0 +1,17 @@
+{
+  "valorTotalEstoque": 4493.3,
+  "produtosCriticos": [
+    {
+      "id": 2,
+      "nome": "mouse sem fio",
+      "preco": 129.9,
+      "quantidade": 3
+    },
+    {
+      "id": 3,
+      "nome": "headset usb",
+      "preco": 150.9,
+      "quantidade": 4
+    }
+  ]
+}
