@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "nome": "teclado mecanico",
+    "preco": 350.00,
+    "quantidade": 10
+  },
+  {
+    "id": 2,
+    "nome": "mouse sem fio",
+    "preco": 129.90,
+    "quantidade": 3
+  },
+  {
+    "id": 3,
+    "nome": "headset usb",
+    "preco": 150.90,
+    "quantidade": 4
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "name": "auditoria-de-estoque",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "compilar": "tsc",
+    "auditar": "node dist/auditoria.js"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.3",
+    "typescript": "^5.0.0"
+  }
+}
