@@ -12,13 +12,10 @@ type RelatorioAuditoria = {
 	produtosCriticos: ItemEstoque[]
 }
 
-readFile("./estoque.json", "utf8").then((conteudo: string) => JSON.parse(conteudo) as ItemEstoque[])
-.then((estoque: ItemEstoque[]) => {
+readFile("./estoque.json", "utf8").then((conteudo: string) => JSON.parse(conteudo) as ItemEstoque[]) .then((estoque: ItemEstoque[]) => {
 		const relatorio: RelatorioAuditoria = {
-			valorTotalEstoque: estoque.reduce(
-				(total: number, item: ItemEstoque) =>
-					total + item.preco * item.quantidade,
-				0,
+			valorTotalEstoque: estoque.reduce((total: number, item: ItemEstoque) =>
+					total + item.preco * item.quantidade, 0
 			),
 			produtosCriticos: estoque.filter(
 				(item: ItemEstoque) => item.quantidade < 5,
@@ -29,3 +26,5 @@ readFile("./estoque.json", "utf8").then((conteudo: string) => JSON.parse(conteud
 	.catch((erro: unknown) => {
 		console.error("nao foi possivel concluir a auditoria:", erro);
 	})
+
+	
